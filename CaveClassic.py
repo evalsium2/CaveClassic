@@ -5,7 +5,7 @@ from ursina.prefabs. \
 import pygame
 
 app = Ursina()
-Sky(texture="sky/sky1")
+Sky(texture="sky1")
 player = FirstPersonController()
 
 boxes = []
@@ -14,7 +14,7 @@ for n in range(50):
         box = Button(color=color.white,
                      model="cube",
                      position=(k, 0, n),
-                     texture='assets/grass',
+                     texture='grass',
                      parent=scene,
                      origin_y=0.5
                      )
@@ -30,7 +30,7 @@ def input(key):
                              model="cube",
                              position=
                              box.position + mouse.normal,
-                             texture='assets/stone',
+                             texture='stone',
                              parent=scene,
                              origin_y=0.5)
                 boxes.append(new)
