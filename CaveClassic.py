@@ -14,7 +14,7 @@ for n in range(50):
         box = Button(color=color.white,
                      model="cube",
                      position=(k, 0, n),
-                     texture='grass',
+                     texture='texture/grass',
                      parent=scene,
                      origin_y=0.5
                      )
@@ -30,7 +30,7 @@ def input(key):
                              model="cube",
                              position=
                              box.position + mouse.normal,
-                             texture='stone',
+                             texture='texture/stone',
                              parent=scene,
                              origin_y=0.5)
                 boxes.append(new)
